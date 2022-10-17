@@ -39,4 +39,3 @@ async function getSearchTerm() {
     insertTest();
     return response.data;
 }
-

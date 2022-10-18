@@ -29,13 +29,13 @@ async function getSearchTerm() {
     const gifSelector = getRandom(numGen);
     const gifID = gifSelector.id;
     const gifURL = `https://media4.giphy.com/media/${gifID}/giphy.gif`;
-    function insertTest() {
+    function insertNewGif() {
         gifArea.prepend(span);
         span.classList.add("newGif");
         span.appendChild(img);
         img.src = gifURL;
         return;
     }
-    insertTest();
+    insertNewGif();
     return response.data;
 }
